@@ -1,0 +1,30 @@
+.navMenu__list {
+    display: flex;
+    gap: 20px;
+}
+
+.navMenu__link {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 50ms linear;
+
+    &.active {
+        color: yellow;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 100%;
+            margin-top: 3px;
+            background-color: yellow;
+        }
+
+    }
+
+    &:hover {
+        transform: scale(90%);
+    }
+}

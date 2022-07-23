@@ -1,0 +1,142 @@
+.movieDetailsPage {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(252, 252, 252, 0.664);
+    }
+}
+
+.movieDetailsContent {
+    position: relative;
+    z-index: 2;
+}
+
+.movieMainInfo {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    padding-bottom: 15px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+        position: absolute;
+        bottom: 0;
+    }
+
+    @media screen and (max-width: 618px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.moviePoster {
+    flex: 0 0 250px;
+    width: 250px;
+    max-height: 375px;
+    min-height: 375px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.movieDescription {
+    flex: 0 1 auto;
+}
+
+.movieTitle {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.movieInfoField {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.movieInfoFieldTitle {
+    font-weight: 600;
+
+}
+
+div.movieInfoFieldTitle {
+    margin-bottom: 3px;
+}
+
+.movieOverview {
+    margin-top: 20px;
+}
+
+.OverviewTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.overviewText {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.movieAdditionalInfo {
+    padding: 15px 0;
+}
+
+.movieAdditionalInfoLinks {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.movieAdditionalInfoTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.linksList {
+    display: flex;
+    gap: 10px;
+}
+
+.movieAdditionalInfoLink, .backBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 30px;
+    min-width: 120px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    background-color: #3f51b5;
+
+    &:hover,
+    &:focus {
+        background-color: #303f9f;
+        color: yellow;
+    }
+}
+
+.movieAdditionalContent {
+    padding-top: 15px;
+}
+
+.backBtn {
+    margin-bottom: 10px;
+    min-width: 70px;
+}

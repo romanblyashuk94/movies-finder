@@ -1,0 +1,43 @@
+.reviewsItem {
+    min-height: 25px;
+    background-color: rgba(0, 0, 0, 0.151);
+    padding: 15px 10px;
+    border-radius: 5px;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    padding: 0 10px 10px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.288);
+    }
+}
+
+.reviewHeaderTitle {
+    margin-right: 5px;
+}
+.reviewAuthorName,
+.reviewDateNumber {
+    font-size: 18px;
+    font-weight: 500;  
+}
+
+.reviewContent {
+    margin-top: 15px;
+    line-height: 1.3;
+}
