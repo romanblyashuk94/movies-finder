@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import Header from './Header/Header';
 import routes from 'routes';
+import Header from './Header/Header';
 import Loader from './Loader/Loader';
 
 const HomePage = lazy(() =>
